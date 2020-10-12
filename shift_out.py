@@ -15,7 +15,7 @@ class ShiftOut(Module):
         # Internal signals
         self.PWM_clk = Signal(8) ## Clock to trigger the next shift out. 
         self.PWM_shift = Signal(1) # Flag to trigger shifting out the data
-        self.buffer = Signal(64)
+        self.panel_buffer1 = Signal(64)
         self.buf_cnt = Signal(7)
         # GPIO
         # clock, strobe and OE are shared
